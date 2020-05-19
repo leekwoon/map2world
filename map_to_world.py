@@ -94,17 +94,6 @@ class WorldGenerator(object):
         view_controller = ET.SubElement(camera, 'view_controller')
         view_controller.text ='orbit'
 
-        # perfect map plugin 
-        plugin = ET.SubElement(world, 'plugin', name='gazebo_occupancy_map', filename='libgazebo_2Dmap_plugin.so')
-        map_resolution = ET.SubElement(plugin, 'map_resolution')
-        map_resolution.text = '0.05'
-        map_height = ET.SubElement(plugin, 'map_height')
-        map_height.text = '0.45'
-        map_size_x = ET.SubElement(plugin, 'map_size_x')
-        map_size_x.text = '200'
-        map_size_y = ET.SubElement(plugin, 'map_size_y')
-        map_size_y.text = '200'
-
         return sdf, world
 
     def generate_v_wall(self, parent, x, y, length, id):
