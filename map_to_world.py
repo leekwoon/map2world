@@ -149,7 +149,7 @@ class WorldGenerator(object):
   
     def is_v_wall_type(self, r, c, gridmap):
         """
-            Return True if vertical wall is proper to ...
+            Return True if it is belong to vertical wall ...
 
             This function helps to reduce the number of walls to generate
         """
