@@ -12,7 +12,9 @@ An useful script written in python which automatically generate 3D gazebo world 
 
 ## Run
 
+```
 python map_to_world.py MAP_PATH_HERE
+```
 
 ## Result
 
